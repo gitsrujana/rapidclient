@@ -19,13 +19,13 @@ import ContactForm from "./components/ContactForm ";
 import Navbar from "./components/Navbar";
 import PersonalizedJobMatches from "./components/Home/PersonalizedJobMatches";
 import SubscriptionPage from "./components/Home/SubscriptionPage";
-import LandingPage from "./components/Home/LandingPage";
+
 import Footer from "./components/Footer";
-import PremiumJobsSection from "./components/Home/PremiumJobsSection ";
-import Companycard from "./srujana/Companycard";
+
 import ComingSoon from "./srujana/ComingSoon ";
 import ForgotPassword from "./components/Logins/Forgotpassword";
-import ResetPassword from "./components/Logins/ResetPassword.js";
+import ResetPassword from "./components/Logins/ResetPassword";
+
 
 
 

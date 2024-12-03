@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Card, CardContent, Typography, Box, Grid, useMediaQuery, Button } from "@mui/material";
 import axios from "axios";
 import { assets } from "../../assets/assets";
-import PopularJobCategory from "./PopularJobCategories ";
+
 
 const SavedJobs = () => {
   const [jobposts, setJobposts] = useState([]);
@@ -23,7 +23,7 @@ const SavedJobs = () => {
   }, []);
  
   const handleShowCompanyDetails = () => {
-    setShowCompanyDetails(true); // Show PopularJobCategory when button is clicked
+    setShowCompanyDetails(true); 
   };
   return (
 
@@ -69,24 +69,26 @@ const SavedJobs = () => {
             clipPath:'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'
           }}
         />
-        <Box
+       <Box
           sx={{
         
             flex:1,
-            textAlign: "center"
+            textAlign: "center",
+            mt: { xs: 3, md: 0 },
           }}
         >
-          <Typography variant="h4" component="h1" paddingBottom={3} marginTop={-10}>Saved Jobs</Typography>
-          <Grid item md={3}>
-          <Typography variant="body1" >
-            Save jobs that interest you and return to them at any moment. Whether you're in the middle of a search or looking to compare choices,our "Saved Jobs" tool keeps you organized and focused.Keep track of promising possibilities without fear of losing them.
+          <Typography variant="h4" component="h1" paddingBottom={3} marginTop={{ xs: -5, md: -10 }} 
+ >Saved Jobs</Typography>
+          <Typography variant="body1" sx={{maxWidth:'600px',whiteSpace:'pre-line',textAlign:'center',lineHeight:'1.5',margin:'0 auto'}} >
+            Save jobs that interest you and return to them at any moment. Whether you're in the middle of a search or looking to compare choices,our "Saved Jobs" tool keeps you organized and focused.
+            Keep track of promising possibilities without fear of losing them.
           </Typography>
-          </Grid >
-         
         </Box>
       </Box>
 
 </Box>
+
+
     <Box sx={{ mt: -50, mx: isMobile ? "2%" : "10%" }}>
     <Typography variant="h4" gutterBottom textAlign="center" sx={{ fontWeight: 'bold', color: '#1D3557' }}>
       Saved Job Posts
